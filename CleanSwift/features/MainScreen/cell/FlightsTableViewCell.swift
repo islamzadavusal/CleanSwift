@@ -35,14 +35,13 @@ class FlightsTableViewCell: UITableViewCell, FlightCellProtocol {
         flightContainerView.layer.borderColor = UIColor.lightGray.cgColor
         flightContainerView.layer.borderWidth = 1
         
-        let item = self.viewModel.flight
-        companyNameLabel.text = item.companyDisplayName
-        lblDeparture.text = item.departureDate
-        lblLanding.text = item.landingDate
-        lblPrice.text = "\(item.price) TL"
-        lblRoute.text = "\(item.origin) > \(item.departure)"
+        companyNameLabel.text = flightData.companyDisplayName
+        lblDeparture.text = flightData.departureDate
+        lblLanding.text = flightData.landingDate
+        lblPrice.text = "\(flightData.price) TL"
+        lblRoute.text = "\(flightData.origin) > \(flightData.departure)"
         
-        self.companyImageView.kf.setImage(with: URL(string: item.companyImageUrl)) { image in
+        self.companyImageView.kf.setImage(with: URL(string: flightData.companyImageUrl)) { image in
             print("IMAGE")
             
         }

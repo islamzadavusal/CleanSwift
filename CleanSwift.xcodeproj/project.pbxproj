@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8CA88FB52B97B981007544F2 /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA88FAD2B97B981007544F2 /* ProductListViewController.xib */; };
 		8CA88FB62B97B981007544F2 /* ProductListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA88FAE2B97B981007544F2 /* ProductListModels.swift */; };
-		8CA88FB72B97B981007544F2 /* cells in Resources */ = {isa = PBXBuildFile; fileRef = 8CA88FAF2B97B981007544F2 /* cells */; };
 		8CA88FB92B97B981007544F2 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA88FB12B97B981007544F2 /* ProductListViewController.swift */; };
 		8CA88FBA2B97B981007544F2 /* ProductListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA88FB22B97B981007544F2 /* ProductListInteractor.swift */; };
 		8CA88FBB2B97B981007544F2 /* ProductListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA88FB32B97B981007544F2 /* ProductListPresenter.swift */; };
@@ -36,12 +35,13 @@
 		8CBC3DA12B97AE34008909C8 /* TabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CBC3D9F2B97AE34008909C8 /* TabbarViewController.xib */; };
 		8CBC3DA32B97AE52008909C8 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBC3DA22B97AE52008909C8 /* ViewControllerFactory.swift */; };
 		8CBC3DB62B97B4C3008909C8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8CBC3DB52B97B4C3008909C8 /* Kingfisher */; };
+		8CC053CE2B98600800D9881F /* FlightsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC053CC2B98600800D9881F /* FlightsTableViewCell.swift */; };
+		8CC053CF2B98600800D9881F /* FlightsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CC053CD2B98600800D9881F /* FlightsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8CA88FAD2B97B981007544F2 /* ProductListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductListViewController.xib; sourceTree = "<group>"; };
 		8CA88FAE2B97B981007544F2 /* ProductListModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListModels.swift; sourceTree = "<group>"; };
-		8CA88FAF2B97B981007544F2 /* cells */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cells; sourceTree = "<group>"; };
 		8CA88FB12B97B981007544F2 /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		8CA88FB22B97B981007544F2 /* ProductListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListInteractor.swift; sourceTree = "<group>"; };
 		8CA88FB32B97B981007544F2 /* ProductListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListPresenter.swift; sourceTree = "<group>"; };
@@ -69,6 +69,8 @@
 		8CBC3D9E2B97AE34008909C8 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		8CBC3D9F2B97AE34008909C8 /* TabbarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabbarViewController.xib; sourceTree = "<group>"; };
 		8CBC3DA22B97AE52008909C8 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		8CC053CC2B98600800D9881F /* FlightsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsTableViewCell.swift; sourceTree = "<group>"; };
+		8CC053CD2B98600800D9881F /* FlightsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +161,7 @@
 		8CBC3D822B97AD55008909C8 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
-				8CA88FAF2B97B981007544F2 /* cells */,
+				8CC053CB2B985FFD00D9881F /* cell */,
 				8CA88FB42B97B981007544F2 /* ProductApiWorker.swift */,
 				8CA88FB22B97B981007544F2 /* ProductListInteractor.swift */,
 				8CA88FAE2B97B981007544F2 /* ProductListModels.swift */,
@@ -213,6 +215,15 @@
 				8CBC3D9F2B97AE34008909C8 /* TabbarViewController.xib */,
 			);
 			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		8CC053CB2B985FFD00D9881F /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				8CC053CC2B98600800D9881F /* FlightsTableViewCell.swift */,
+				8CC053CD2B98600800D9881F /* FlightsTableViewCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,8 +290,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CA88FB72B97B981007544F2 /* cells in Resources */,
 				8CBC3D6F2B97AC3D008909C8 /* LaunchScreen.storyboard in Resources */,
+				8CC053CF2B98600800D9881F /* FlightsTableViewCell.xib in Resources */,
 				8CBC3D6C2B97AC3D008909C8 /* Assets.xcassets in Resources */,
 				8CBC3D932B97ADD8008909C8 /* FavoriteViewController.xib in Resources */,
 				8CBC3D9B2B97ADEE008909C8 /* SplashViewController.xib in Resources */,
@@ -311,6 +322,7 @@
 				8CA88FBB2B97B981007544F2 /* ProductListPresenter.swift in Sources */,
 				8CBC3D672B97AC3B008909C8 /* ViewController.swift in Sources */,
 				8CBC3D922B97ADD8008909C8 /* FavoriteViewController.swift in Sources */,
+				8CC053CE2B98600800D9881F /* FlightsTableViewCell.swift in Sources */,
 				8CA88FBC2B97B981007544F2 /* ProductApiWorker.swift in Sources */,
 				8CBC3D632B97AC3B008909C8 /* AppDelegate.swift in Sources */,
 				8CBC3D652B97AC3B008909C8 /* SceneDelegate.swift in Sources */,
